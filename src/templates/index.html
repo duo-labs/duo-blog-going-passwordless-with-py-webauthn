@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="static/simplewebauthn-browser.4.1.0.umd.min.js"></script>
+    <link rel="stylesheet" href="static/style.css" />
+    <title>Going Passwordless with py_webauthn (Sample RP)</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Going Passwordless with py_webauthn (Sample Code)</h1>
+        <div class="form-container">
+          <h2>Username:</h2>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            value="{{ username }}"
+            disabled
+          />
+          <button id="btnRegister">Register</button>
+          <button id="btnAuthenticate">Authenticate</button>
+        </div>
+      </header>
+      <main>
+        <h2></h2>
+        <details>
+          <summary>Debug Info</summary>
+          <!-- Registration -->
+          <section>
+            <h3>Registration</h3>
+            <p>Status: <span id="statusRegister"></span></p>
+            <h4>Raw Output:</h4>
+            <textarea id="dbgRegister" spellcheck="false"></textarea>
+          </section>
+          <!-- Authentication -->
+          <section>
+            <h3>Authentication</h3>
+            <p>Status: <span id="statusAuthenticate"></span></p>
+            <h4>Raw Output:</h4>
+            <textarea id="dbgAuthenticate" spellcheck="false"></textarea>
+          </section>
+        </details>
+        <div class="debug-container"></div>
+      </main>
+    </div>
+
+    <script src="static/script.js"></script>
+  </body>
+</html>
