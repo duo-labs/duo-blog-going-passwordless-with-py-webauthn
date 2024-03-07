@@ -90,7 +90,7 @@ document
     if (verified) {
       printToStatus(statusRegister, getPassStatus());
     } else {
-      printToStatus(statusRegister, getFailureStatus(err));
+      printToStatus(statusRegister, getFailureStatus(msg));
     }
     printToDebug(
       dbgRegister,
@@ -149,7 +149,7 @@ document
     if (verified) {
       printToStatus(statusAuthenticate, getPassStatus());
     } else {
-      printToStatus(statusAuthenticate, getFailureStatus(err));
+      printToStatus(statusAuthenticate, getFailureStatus(msg));
     }
     printToDebug(
       dbgAuthenticate,
