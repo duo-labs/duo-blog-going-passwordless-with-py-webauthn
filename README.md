@@ -25,3 +25,9 @@ Finally, run the server to view the demo at http://localhost:5000:
 ```sh
 ./start-server.sh
 ```
+
+Windows users can instead use
+
+```ps1
+./Start-Server.ps1
+```
